@@ -12,7 +12,6 @@ if (Meteor.isClient){
 	Template.layout.events({
 		'change .cities': function(event, template){
 			Session.set('city', template.find('.cities').value)
-			// var city = event.currentTarget.value;
 			Session.get('currentWeather');
 		} 
 	});
